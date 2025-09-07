@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🧭 Freelancing as a Neurodivergent: What I’ve Learned — Brian Njenga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+     <meta property="og:title" content="🧭 Freelancing as a Neurodivergent: What I’ve Learned.">
+<meta property="og:description" content="I’ve freelanced for over a decade while living with paranoid schizophrenia for nearly twenty years. It’s been a journey full of contradictions — moments of freedom, moments of slavery, and lessons carved into my very being.">
+     <meta property="og:image" content="/assets/images/psychology-copy/hero.webp">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root{
+      --blue:#2563eb; --green:#16a34a; --red:#dc2626;
+      --slate:#0f172a; --muted:#94a3b8; --bg:#0b1020;
+      --ring:rgba(37,99,235,.35); --radius:18px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:#e5e7eb;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none} 
+    .container{width:min(1120px,92%);margin-inline:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.7);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center}
+    .logo{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 180deg at 50% 50%, var(--green), var(--blue), var(--red))}
+    .brand h1{font-size:18px;font-weight:800}
+    nav ul{display:flex;gap:22px;align-items:center}
+    nav a{color:#cbd5e1;font-weight:600}
+    nav a:hover{color:#fff}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:12px 18px;border-radius:999px;font-weight:700;border:1px solid transparent;transition:.2s transform}
+    .btn:hover{transform:translateY(-1px)}
+    .btn:focus{outline:none;box-shadow:0 0 0 6px var(--ring)}
+    .btn-primary{background:linear-gradient(90deg,var(--blue),#1e40af);color:#fff}
+    .btn-secondary{background:linear-gradient(90deg,var(--green),#15803d);color:#041007}
+    .btn-ghost{border:1px solid rgba(255,255,255,.25)}
+    .center{text-align:center}
+
+    /* Article layout */
+    .hero-mini{padding:36px 0 10px;border-bottom:1px solid rgba(255,255,255,.06)}
+    .hero-mini h1{font-size:clamp(26px,4.8vw,40px);line-height:1.1;margin:0}
+    .meta{color:var(--muted);margin-top:6px}
+    main.article{padding:34px 0}
+    .prose{width:min(860px,100%);margin-inline:auto}
+     .prose a{color: #93c5fd; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px;}
+
+    .prose p{line-height:1.8;color:#dbe3ee}
+    .prose h2{font-size:clamp(20px,3.8vw,28px);margin:28px 0 8px}
+    .prose h3{font-size:clamp(18px,3.4vw,24px);margin:24px 0 6px}
+    .lead{color:#cbd5e1;font-size:1.06rem}
+    .muted{color:var(--muted)}
+    .callout{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    .grid{display:grid;gap:18px}
+    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    @media (max-width:900px){.cols-2{grid-template-columns:1fr}}
+
+    /* Figures & images */
+    figure{margin:18px 0}
+    figure img{width:100%;height:auto;border-radius:14px;background:#0b1225}
+    figcaption{font-size:.92rem;color:#a9b6c9;margin-top:6px}
+
+    /* Table (channel matrix) */
+    table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid rgba(255,255,255,.1);border-radius:12px;overflow:hidden}
+    thead th{background:rgba(255,255,255,.06);color:#e5e7eb;text-align:left;padding:10px}
+    tbody td{padding:10px;border-top:1px solid rgba(255,255,255,.08)}
+    tbody tr:nth-child(odd) td{background:rgba(255,255,255,.02)}
+
+    footer{padding:46px 0 80px;border-top:1px solid rgba(255,255,255,.08);color:#a7b0bf;text-align:center}
+
+    /* Mobile nav: 3×2 grid at <=700px for 6 links */
+    @media (max-width:700px){
+      .nav{flex-direction:column;gap:8px;padding:10px 0}
+      header nav ul{display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 12px;align-items:center;justify-items:center;width:100%;padding:0;margin:0;list-style:none}
+      header nav li{margin:0 !important}
+      header nav a.btn{padding:10px 14px;white-space:nowrap}
+      html,body{overflow-x:hidden}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>JBN Content Consultancy</h1>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a class="btn btn-ghost" href="/about.html#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="/index.html#start">Start Your Project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mini hero -->
+  <section class="hero-mini">
+    <div class="container prose">
+      <h1>🧭 Freelancing as a Neurodivergent: What I’ve Learned</h1>
+ <figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/hero-banner.png" alt="A mid-30s Black man with dreadlocks and a slightly greying beard, sitting at a desk in a dimly lit home office.">
+        <figcaption>A Life Between Two Rollercoasters 🎢</figcaption>
+      </figure>
+
+
+      <p class="meta">By Brian Njenga</p>
+    </div>
+  </section>
+
+  <main class="article">
+    <article class="container prose">
+      <p class="lead">For me, freelancing has never been just a career choice. </p>
+
+<p> It has been survival, agency, and sometimes, slavery.</p>
+
+<p>I’ve lived with paranoid schizophrenia for nearly twenty years, and freelanced for more than ten.</p>
+
+<p>The two stories have run in parallel — sometimes colliding, sometimes lifting me up, sometimes dragging me into the abyss. </p>
+
+<p>What I’ve learned isn’t in textbooks. </p>
+
+<p>It’s in scars, small victories, and lessons carved deep into my mind.</p>
+
+
+      
+     
+      <h2>From Promise to Breakdown 🎓➡️🧠</h2>
+    
+
+ <figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/from-promise-to-breakdown.png" alt="A young African man in his early twenties sitting in a mental health s clinic setting, looking distressed and isolated. A white psychiatrist looks at him, holding a clipboard.">
+        <figcaption>From the top of the world to full-blown psychosis</figcaption>
+      </figure>
+
+      <p>In 2005, I was on top of the world. </p>
+
+      <p>I’d managed what felt like a miracle — after earning a C+ in my KCSE exams, I was accepted to pursue a BSc in Computer Science at Covenant University in Nigeria. </p>
+
+      <p>My peers were retaking exams; I had a head start in tech, a future full of possibility.</p>
+
+      <p>But two weeks into a holiday back home in Kenya, everything cracked. </p>
+
+      <p>Voices — persecutory, relentless — invaded my mind.</p>
+
+      <p>With my Christian upbringing, I thought it was a demonic attack.</p>
+
+      <p>My mother, a devout believer, prayed over me, took me to deliverance sessions.</p>
+
+      <p>Nothing worked.</p>
+
+      <p>The paranoia grew until I was convinced even she wanted to kill me.</p>
+
+      <p>Portreiz Mental Hospital became my second home.</p>
+
+      <p>The first admission stripped me bare — literally — locked naked in a tiled room with only a lightbulb and a hole in the corner.</p>
+
+      <p>That was the beginning of a cycle: paranoia, forced medication, brief stability, then relapse.</p>
+
+      <p> Meanwhile, my peers graduated, found jobs, and started families.</p>
+
+      <p>I was holed up at home, bitter, angry, and left behind.</p>
+      
+
+
+<h2>Denial, Addiction, and Cycles 🔄</h2>
+
+<p>I smoked bhang, chewed muguka, and drank cheap liqueurs heavily.  </p>
+
+<p>My meds left me drowsy and detached, and my life shrank into a loop of voices, substances, and fleeting stability. </p>
+
+<p>Twice or thrice a year, the demons returned full force. </p>
+
+
+
+<p>Each episode ended in more meds, more fatigue, more shame.</p>
+
+
+
+      <h2>Rediscovering Tech and Writing 💻✍🏽</h2>
+
+      <figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/rediscovering-tech&writing.png" alt="A middle-aged Black man with dreadlocks and a greying beard sits at a home office desk, working on both writing and coding projects on a desktop computer.">
+        <figcaption>Tech self-studies & Stumbling across SEO content writing</figcaption>
+      </figure>
+
+
+<p>In 2011, a spark returned. </p>
+
+<p>My mother bought me a refurbished desktop, and I began self-studying programming again. Java, PHP, VB6, Dreamweaver — slowly, I found joy in code. </p>
+
+<p>I still remember the thrill of reverse-engineering a VB search engine and hooking it to a simple SQL database. </p>
+
+<p>It felt like resurrection.</p>
+
+<p>That same year, I stumbled into content writing. </p>
+
+<p>I had always had a flair for words, and SEO was becoming “the next big thing.” </p>
+
+<p>I landed work with Veritable Writers, then E-Writers, where I became one of their strongest SEO writers — back in the days when keyword stuffing ruled. </p>
+
+<p>For the first time in years, I was productive, useful.</p>
+
+<p>But even then, the voices returned — and this time, they stayed. </p>
+
+<p>The taunts and threats became constant companions. </p>
+
+<p>I often shouted back at them in frustration, sometimes in public, branded a madman. </p>
+
+<p>Yet somehow, the writing never stopped. </p>
+
+<p>If anything, freelancing became both my shield and my therapy.</p>
+
+
+
+ <h2>Schizophrenia Meets the Gig Economy 🧠💼</h2>
+
+     <p>Freelancing and schizophrenia make an odd pair. </p>
+
+
+<p>On one hand, freelancing gave me agency — no boss to fire me for shouting at unseen enemies, no office politics to trigger paranoia. </p>
+
+<p>On the other hand, it amplified my instability: income swings, relentless deadlines, clients ghosting. Most of my earnings went straight into meds. </p>
+
+<p>Stability always felt temporary.</p>
+
+<h2>New Chances, Big Breaks 🌐</h2>
+
+
+<figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/new-chances.png" alt="A mid-30s Black man with dreadlocks and a greying beard working in a modern home office. He sits at a desk during a Zoom call with multiple clients visible on screen.">
+        <figcaption>My big break in copywriting</figcaption>
+      </figure>     
+
+
+        <p>When despair loomed again, my brother encouraged me to enroll in Treehouse coding courses. </p>
+   
+        <p>After a decade away from structured learning, I surprised myself — a GPA of 4.5 in HTML, CSS, and JS.</p>
+
+        <p> It reminded me: I could still learn, still achieve.</p>
+
+        <p>Then came a lifeline: Margo White of Birk Digital Group in Raleigh hired me as a Senior Copywriter. </p>
+
+        <p>For almost three years, I had stability, steady income, and confidence. </p>
+
+        <p>But when the contract ended in early 2020, I crashed again — savings gone, unemployment back, demons roaring.</p>
+
+       <p>And then, another twist: iWorker. A random LinkedIn DM led to an application, interviews, and acceptance. </p>
+
+      <p>For the first time, I had to pitch myself live on Zoom to clients. </p>
+
+      <p>Awkward at first, but I got the hang of it, securing clients within weeks. </p>
+
+     <p>Each year brought growth, end-of-year bonuses, and a sense of progress.</p>
+       
+     
+     <h2>Highs, Lows, and Burnout 🌺🔥</h2>
+
+<p>My biggest high came in 2024. Tanya Goodwin of Botanical Chemist entrusted me with a ten-month ghostwriting campaign, including daily deliverables and an ESG white paper. </p>
+
+<p>It was the pinnacle of my freelance career — purposeful work, meaningful pay.</p>
+
+<p>But I pushed too hard. </p>
+
+<p>The paranoia came back stronger than ever. </p>
+
+<p>By December, I was back at Portreiz as an in-patient. </p>
+
+<p>When I was discharged, all my clients were gone. </p>
+
+<p>Ghosted. </p>
+
+<p>Just like that, my momentum vanished.</p>
+
+<p>Now in 2025, I’m piecing things back together. </p>
+
+<p>Building my own website. </p>
+
+<p>Pouring energy into Echoes of Valor, my debut historical fiction novel.</p>
+
+<p> Freelancing remains a lifeline, but fiction writing feels like a legacy.</p>
+
+
+<h2>Lessons Learned 🧭</h2>
+
+ <figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/lessons-learned.png" alt="A middle-aged Black man with dreadlocks and a short greying beard, seated at a desk in a warmly lit home office. He reflects pensively while working on a desktop PC.">
+        <figcaption>Hard lessons earned from my freelancing as a neurodivergent</figcaption>
+      </figure>     
+
+
+<p>Looking back, here’s what I know for sure:</p>
+
+<ul>
+    <li><strong>Health First 🧠</strong> — Without stability, there’s no freelancing career. Period.</li>
+    <li><strong>Burnout Is Real🔥 </strong>— Overcommitment always ends in collapse.</li>
+    <li><strong>Save Relentlessly 💰 </strong>— Lean periods strike without warning.</li>
+    <li><strong>Adaptability Wins 🌀 </strong> — From coding to SEO to fiction, flexibility kept me alive in this gig economy.</li>
+    <li><strong>Community Matters 🤝 </strong>— My mother, my brother, my networks — freelancing is never truly solo.</li>
+<li><strong>Meaning > Money 📖 </strong>— Writing for survival got me by. Writing for meaning keeps me alive.</li>
+
+</ul>
+
+<h2>Advice to Neurodivergent Freelancers 📌</h2>
+
+<ol>
+    <li>Build routines that bend, not break.</li>
+    <li>Keep a financial cushion for the dry spells.</li>
+    <li>Be honest about your limits — don’t chase every client.</li>
+    <li>Guard your health like your most important contract.</li>
+    <li>Seek work that aligns with your humanity, not just your wallet.</li>
+</ol>
+
+<h2>Conclusion: Freelancing as Mirror and Teacher ✨</h2>
+
+   <figure>
+        <img src="images/blog/freelancing-as-a-neurodivergent/conclusion.png" alt="A middle-aged Black man with dreadlocks and a short greying beard, sitting at a wooden desk in a home office, gazing a laptop.">
+        <figcaption>Freelancing has been both a blessing and a curse</figcaption>
+      </figure>     
+
+<p>Freelancing has been my curse and my cure, my cage and my canvas. </p>
+
+<p>It mirrored my schizophrenia — unpredictable, chaotic, often brutal. </p>
+
+
+<p>But it also taught me resilience, adaptability, and the power of carving a life on my own terms.</p>
+
+<p>I won’t romanticize it: freelancing is hard, especially with a mental condition. </p>
+
+<p>But it’s also where I’ve discovered who I am — not just a patient, not just a freelancer, but a writer with stories worth telling.</p>
+
+<p>And that, for me, is the most important lesson of all.</p>
+
+     
+    </article>
+  <p class="center" style="margin-top:10px">
+          <a class="btn btn-primary" href="/about.html#contact">📩 Need impactful copy or content focusing on balancing neurodivergence and work? Let’s Work Together</a>
+        </p>
+</section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 • Brian Njenga. All rights reserved.</p>
+      <p>Built with care in Kenya • <a href="terms&conditions.html">Terms</a> • <a href="privacy.html">Privacy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
