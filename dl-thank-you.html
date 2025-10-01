@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Thanks — Your download is ready</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+ 
+
+  <link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png?v=5" sizes="32x32" type="image/png">
+<link rel="shortcut icon" href="/favicon.ico?v=5">
+
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<!--<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0ea5e9"> add later -->
+
+  <style>
+    body{margin:0;background:#0b1020;color:#e5e7eb;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{width:min(900px,92%);margin:60px auto}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px}
+    .btn{display:inline-flex;gap:.5rem;align-items:center;justify-content:center;padding:12px 18px;border-radius:999px;font-weight:700;border:1px solid transparent;background:linear-gradient(90deg,#2563eb,#1e40af);color:#fff;text-decoration:none}
+    .muted{color:#94a3b8}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="card">
+      <h1>Thanks! Your download is on the way 📩</h1>
+      <p class="muted">We’ve emailed you a link. If it doesn’t arrive in a minute, check spam or use the direct link below.</p>
+      <p id="direct"></p>
+      <p class="muted">More resources: <a class="btn" href="/landing.html">All Free Toolkits</a></p>
+    </div>
+  </main>
+
+  <script>
+    // Optional: show a direct link based on ?file=slug (must match PHP map)
+    const map = {
+      echoes_pdf:'/assets/pdfs/echoes-ch1.pdf',
+      echoes_epub:'/assets/ebooks/echoes-ch1.epub',
+      echoes_mobi:'/assets/ebooks/echoes-ch1.mobi',
+      serp_real_estate_toolkit:'/assets/toolkits/serp-real-estate-toolkit.pdf',
+      content_value_quad:'/assets/toolkits/content-value-quadrant.pdf',
+      omnichannel_starter:'/assets/toolkits/omnichannel-starter-stack-for-small-brands.pdf',
+      bingeable_content:'/assets/toolkits/10-ways-to-make-your-content-more-bingeable.pdf',
+      net_positive_score:'/assets/toolkits/net-positive-business-scorecard.pdf',
+      digital_wellbeing:'/assets/toolkits/5-apps-that-prioritize-digital-wellbeing.pdf',
+      multi_metric_esg:'/assets/toolkits/multi-metric-esg.pdf',
+      ethical_pay_to_play:'/assets/toolkits/5-case-studies-of-ethical-pay-to-play.pdf'
+    };
+    const ps = new URLSearchParams(location.search);
+    const slug = ps.get('file');
+    if(slug && map[slug]){
+      document.getElementById('direct').innerHTML =
+        `Direct link: <a class="btn" href="${map[slug]}">Download now</a>`;
+    }
+  </script>
+</body>
+</html>
